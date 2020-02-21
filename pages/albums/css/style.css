@@ -1,0 +1,108 @@
+.container-albums {
+    margin-top: 88px;
+    padding-top: 10px;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.container-albums h1 {
+    margin-left: 30px;
+}
+
+.container-fluid .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.albums .card {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    transition: all .2s;
+    margin: 20px;
+}
+
+.albums .card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.albums .card a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photos .photo-container img:last-child {
+    transition: all .2s;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.photos .photo-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.show-photo {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fafafa;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.show-photo img:last-child {
+    max-width: 70vw !important;
+}
+
+.show-photo img:hover {
+    box-shadow: none !important;
+    cursor: initial !important;
+}
+
+.show-photo img:first-child {
+    width: 1.4rem;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.show-photo img:first-child:hover {
+    cursor: pointer !important;
+}
+
+.close-hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .show-photo img:first-child {
+        top: 0;
+        margin-top: 20px;
+        width: 1.2rem;
+    }
+
+    .container-albums h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .show-photo img:last-child {
+        max-width: 90vw !important;
+    }
+    
+}

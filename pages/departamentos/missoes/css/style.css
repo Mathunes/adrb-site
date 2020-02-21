@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+#cover {
+    background: url('../../../../assets/images/missions.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab';
+    line-height: 4rem;
+    font-weight: lighter;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+
+#about {
+    padding: 80px 40px;
+    height: calc(100vh - 88px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about * {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about * span {
+    width: 100%;
+}
+
+#about .contacts, .worship {
+    padding: 3px;
+}
+
+@media (max-width: 990px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: .6rem;
+        margin-left: 1rem;
+    }
+
+    #about {
+        padding: 80px 20px;
+    }
+
+    #about .contacts {
+        text-align: right;
+    }
+
+    #about .contacts div {
+        width: 100%;
+        text-align: right;
+    }
+    
+    #about .contacts h4 {
+        width: 100%;
+    }
+}
