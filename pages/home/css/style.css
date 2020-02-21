@@ -1,0 +1,171 @@
+h2 {
+    margin: 40px;
+}
+
+.carousel {
+    margin-top: 88px;
+}
+
+.container .carousel .carousel-inner .row {
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 90%;
+}
+
+.container .carousel .carousel-inner .row .card {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
+    border-radius: 15px;
+}
+
+.control-schedule-prev {
+    transform: rotate(180deg);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: .2;
+}
+
+.carousel-control-prev img, .carousel-control-next img {
+    width: 50px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    transition: all .2s;
+}
+
+#verse {
+    background: url('../../../assets/images/lamp.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0 25vw;
+}
+
+#verse * {
+    margin: 20px;
+}
+
+#verse span:last-child {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video div {
+    width: 50vw;
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+#btn-see-more {
+    border: 3px solid #CD9643;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: all .2s;
+    color: #CD9643;
+    text-transform: uppercase;
+    margin: 40px auto;
+}
+
+#btn-see-more:hover {
+    background-color: #CD9643;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 990px) {
+    #verse {
+        font-size: 1.7rem;
+    }
+
+    #verse span:last-child {
+        font-size: 1.5rem;
+    }
+
+    .video div {
+        width: 70vw;
+        max-width: 70vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container .carousel .carousel-inner .row {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .container .carousel .carousel-inner .row .card {
+        margin: 5px;
+        padding: 15px;
+    }
+
+    #verse {
+        font-size: 1.6rem;
+        padding: 0 15vw;
+    }
+
+    #verse span:last-child {
+        font-size: 1.4rem;
+    }
+
+    .video div {
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    #btn-see-more {
+        font-size: 1.1rem;
+        margin: 30px auto;
+    }
+
+}
+
+@media (max-width: 550px) {
+    #verse {
+        font-size: 1.2rem;
+        padding: 0 5vw;
+    }
+
+    #verse span:last-child {
+        font-size: 1rem;
+    }
+
+    .video {
+        padding: 0 20px;
+    }
+
+    .video div {
+        min-width: 100%;
+    }
+
+    #btn-see-more {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        margin: 30px;
+    }
+}

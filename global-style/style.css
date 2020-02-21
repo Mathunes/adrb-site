@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+header nav {
+    background-color: #fafafa;
+    color: #333333;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.25);
+}
+
+header nav div ul {
+    width: 100%;
+}
+
+footer {
+    background: url('../assets/images/footer.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: #fafafa;
+}
+
+footer .container .row-footer-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+footer .container .row-footer-2 {
+    padding: 40px 20px 0 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .container .row-footer-2 span {
+    font-size: .8rem;
+}
+
+footer .container .row-footer-2 img {
+    width: 100px;
+}
+
+footer .container .row-footer-1 .col-footer {
+    width: 50%;
+}
+
+footer .container .row-footer-1 .col-footer li {
+    margin: 10px 0;
+}
+
+footer .container .row-footer-1 .col-footer li a {
+    color: #ffffff;
+}
+
+footer div div div h4 {
+    margin: 40px 0;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@media (max-width: 990px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin: 30px 0 !important;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer .container .row-footer-1 {
+        flex-wrap: wrap;
+    }
+
+    footer .container .row-footer-1 .col-footer {
+        width: 100%;
+    }
+
+    footer .container .row-footer-1 .col-footer:first-child {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer .container .row-footer-1 .col-footer:first-child div:last-child {
+        text-align: right;
+    }
+
+    footer .container .row-footer-1 .col-footer:last-child h4 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+}
