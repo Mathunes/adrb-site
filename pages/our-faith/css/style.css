@@ -2,3 +2,9 @@
     margin-top: 88px;
     padding-top: 10px;
 }
+
+@media (max-width: 550px) {
+    .container {
+        margin-top: 73.9px;
+    }
+}

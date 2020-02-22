@@ -29,11 +29,15 @@ h2 {
 }
 
 .carousel-control-prev img, .carousel-control-next img {
-    width: 50px;
+    width: 30px;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
     transition: all .2s;
+}
+
+#prev-schedule, #next-schedule {
+    margin-left: 15vw;
 }
 
 #verse {
@@ -77,7 +81,7 @@ h2 {
 }
 
 #btn-see-more {
-    border: 3px solid #CD9643;
+    border: 2px solid #CD9643;
     padding: 5px 10px;
     font-size: 1.3rem;
     margin: 0 auto;
@@ -86,6 +90,7 @@ h2 {
     color: #CD9643;
     text-transform: uppercase;
     margin: 40px auto;
+    border-radius: 5px;
 }
 
 #btn-see-more:hover {
@@ -153,6 +158,10 @@ h2 {
         font-size: 1rem;
     }
 
+    #prev-schedule, #next-schedule {
+        margin-left: 0;
+    }    
+
     .video {
         padding: 0 20px;
     }
@@ -168,4 +177,9 @@ h2 {
     h2 {
         margin: 30px;
     }
+
+    .carousel {
+        margin-top: 73.9px;
+    }
+
 }
