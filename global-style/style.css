@@ -49,12 +49,17 @@ footer .container .row-footer-2 {
     padding: 40px 20px 0 20px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
 footer .container .row-footer-2 span {
     font-size: .8rem;
+}
+
+footer .container .row-footer-2 a {
+    color: #ffffff;
 }
 
 footer .container .row-footer-2 img {

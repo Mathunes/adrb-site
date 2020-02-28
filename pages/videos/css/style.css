@@ -1,6 +1,7 @@
 .container {
     margin-top: 88px;
     padding-top: 10px;
+    min-height: calc(100vh - 88px);
 }
 
 .videos {
